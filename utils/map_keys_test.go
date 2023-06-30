@@ -10,10 +10,10 @@ import (
 func TestMapKeys(t *testing.T) {
 	t.Parallel()
 
-	input := map[string]string{
-		"key1": "value1",
-		"key2": "value2",
-		"key3": "value3",
+	input := map[string]struct{}{
+		"key1": {},
+		"key2": {},
+		"key3": {},
 	}
 	output := []string{
 		"key1",
