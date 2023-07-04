@@ -4,12 +4,12 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/somnek/go-utils/utils"
 	"github.com/stretchr/testify/assert"
+
+	"github.com/somnek/go-utils/utils"
 )
 
-
-func TestMapKeys(t *testing.T){
+func TestMapKeys(t *testing.T) {
 	out := []int{1, 2, 3}
 	in := map[int]struct{}{
 		1: {},
