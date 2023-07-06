@@ -7,8 +7,8 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func testTernary(t *testing.T) {
+func TernaryTest(t *testing.T) {
 	t.Parallel()
-	assert.Equal(t, "a", utils.Ternary(1==1, "a", "b"))
-	assert.Equal(t, "b", utils.Ternary(1==2, "b", "b"))
+	assert.Equal(t, "a", utils.Ternary(1 == 1, "a", "b"))
+	assert.Equal(t, "b", utils.Ternary(1 == 2, "b", "b"))
 }
