@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func SliceConcatTest(t *testing.T) {
+func TestSliceConcat(t *testing.T) {
 	t.Parallel()
 
 	listA := []string{"a", "b", "c"}

@@ -8,7 +8,7 @@ import (
 	"github.com/somnek/go-utils/utils"
 )
 
-func SliceContainTest(t *testing.T) {
+func TestSliceContain(t *testing.T) {
 	t.Parallel()
 
 	l := []string{"boo", "2", "z", ""}
@@ -16,6 +16,6 @@ func SliceContainTest(t *testing.T) {
 	out := []bool{true, false, true}
 
 	for i, v := range in {
-		assert.Equal(t, out[i], utils.SliceCount(l, v))
+		assert.Equal(t, out[i], utils.SliceContain(l, v))
 	}
 }

@@ -8,7 +8,7 @@ import (
 	"github.com/somnek/go-utils/utils"
 )
 
-func SliceCountTest(t *testing.T) {
+func TestSliceCount(t *testing.T) {
 	t.Parallel()
 	in := []string{"a", "b", "c", "a", "a", "c"}
 	assert.Equal(t, 3, utils.SliceCount(in, "a"))
