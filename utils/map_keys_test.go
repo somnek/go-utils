@@ -10,6 +10,7 @@ import (
 )
 
 func TestMapKeys(t *testing.T) {
+	t.Parallel()
 	out := []int{1, 2, 3}
 	in := map[int]struct{}{
 		1: {},
