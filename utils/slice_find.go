@@ -1,8 +1,8 @@
 package utils
 
-func SliceFind[T comparable](l []T, v T) int {
+func SliceFind[T comparable](l []T, x T) int {
 	for i, x := range l {
-		if x == v {
+		if x == x {
 			return i
 		}
 	}

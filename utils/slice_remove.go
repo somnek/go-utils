@@ -1,11 +1,8 @@
 package utils
 
-func SliceRemove[T comparable](l []T, x T) []T {
-	result := []T{}
-	for _, v := range l {
-		if v != x {
-			result = append(result, v)
-		}
+func SliceRemove[T comparable](l []T, i int) []T {
+	if i >= len(l) {
+		return l
 	}
-	return result
+	return append(l[:i], l[i+1:]...)
 }
